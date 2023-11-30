@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creá tu Perfil</title>
+        <link rel="stylesheet" href="./perfil.css">
+    </head>
+    <body>
+        <div id="profile">
+            <h1>Landing Page</h1>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Ingresá tu nombre">
+
+            <label for="bio">Biografía:</label>
+            <textarea id="bio" placeholder="Escribí algo sobre vos"></textarea>
+
+            <button onclick="updateProfile()">Actualizar Perfil</button>
+
+            <div id="result"></div>
+        </div>
+
+        <script>
+            function updateProfile() {
+                let name = document.getElementById('name').value;
+                let bio = document.getElementById('bio').value;
+
+                let resultContainer = document.getElementById('result');
+                resultContainer.innerHTML = '<h2>Perfil Actualizado</h2>' +
+                    '<p>Nombre: ' + name + '</p>' +
+                    '<p>Biografía: ' + bio + '</p>';
+            }
+        </script>
+    </body>
+</html>
