@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de Tareas</title>
+        <link rel="stylesheet" href="./tareas.css">
+    </head>
+    <body>
+        <h1>Lista de Tareas</h1>
+        <form>
+            <label>Agregar tarea:</label>
+            <input type="text" id="nuevaTarea">
+            <button type="button" onclick="agregarTarea()">Agregar</button>
+        </form>
+        <ul id="listaTareas" onclick="eliminarTarea(event)"></ul>
+        <script src="./tareas.js"></script>
+    </body>
+</html>
